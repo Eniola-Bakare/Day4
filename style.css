@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #faebd7 url('./paperboard-simple-fiber-dusty-texture.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 414px) {
+   body h1{
+        font-size: 22px;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center ; */
+    padding: 10px;
+    margin: 0px auto;
+    width: 90%;
+    
+}
+
+@media (max-width: 630px) {
+    .container{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-right: 2px solid #8a612c;
+
+}
+/* @media (max-width: 476px) {
+    aside{
+        padding: 8px;
+    }
+} */
+
+button{
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid #8a612c;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fffcf8 ;
+    width: 100%;
+
+}
+button:hover{
+    background-color: #f1e0c9;
+    transition: all .5s;
+}
+
+@media (max-width: 768px) {
+    button{
+        font-size: 16px;
+        padding: 4px 12px;
+        min-width: 100px;
+    }
+}
+@media (max-width: 630px) {
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-top: 2px solid #8a612c;
+    
+    }
+    button{
+        width: 60%;
+    
+    }
+}
+
+@media (max-width: 625px) {
+    button{
+        padding: 2px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 504px) {
+    button{
+        padding: 4px 12px;
+        font-size: 12px;
+        font-weight:600;
+    }
+}
+
+/* 
+@media (max-width: 476px) {
+    button{
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 390px) {
+    button{
+        padding: 2px 6px;
+        font-size: 10px;
+        min-width: 146px;
+    }
+} */
+
+#main{
+    padding: 10px 20px;
+    flex: 1;
+}
+
+@media (max-width: 376px) {
+    #main{
+        padding: 6px 10px;
+    }
+}
+
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8a612c;
+    padding: 5px;
+}
+
+/* @media (max-width: 400px) {
+    h2{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #8a612c;
+        padding: 3px;
+        width: 180px;
+        font-size: 18px;
+    }
+} */
+
+
+h3{
+    background-color: #fffcf8;
+    border-bottom: 1px solid #8a612c;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+
+.person{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 10px ;
+}
+
+@media (max-width: 900px) {
+    .person{
+        font-size: 16px;
+        margin-top: 12px ;
+    }
+}
+@media (max-width: 768px) {
+    .person{
+        font-size: 12px;
+        margin-top: 12px ;
+    }
+}
+
+@media (max-width: 400px) {
+    .person{
+        font-size: 12px;
+        margin-top: 10px ;
+    }
+}
